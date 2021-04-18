@@ -11,31 +11,58 @@
     --white-clr:#fff;
     --dark-clr:#000000;
 }
+hr{
+    background-color: var(--primary-clr);
+    width: 40px;
+    height: 5px;
+}
 .container{
     margin: 0 auto;
     width: 85%;
-    max-width: 1200px;
+    max-width: 800px;
 }
 .profile-header{
-    background: var(--secondary-clr);
-    /* height: 596px; */
-    padding: 4rem;
-    /* opacity: 20%; */
-    /* transform: skewX(-20deg); */
+   background-color: var(--secondary-clr);
+    
+    /* padding: 4rem; */
     
 }
+
 .profile-header__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 4rem;
+
 }
 .profile-header__img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: var(--primary-clr);
+    
+    background: hsla(0, 100%, 100%, 0.6);
+    position: relative;
+    
+}
+
+.profile-header__img::before{
+    position: absolute;
+    border-radius: 150px;
+    content: '';
+    width: 160px;
+    height: 160px;
+    border: 6px solid hsla(0, 100%, 100%, 0.6);
+    top: -11px;
+    left: -11px;
+    padding: 25px;
+   
+}
+.profile-header__img span{
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
 }
 .profile-header__stack{
     color: var(--white-clr);
@@ -62,21 +89,39 @@
 }
 
 /*About */
-.about-me{
+.main-content{
+    /* position: absolute; */
+    /* top: 100px;    */
+} 
+
+.about-me,.experience, .education,.tech-skill, .soft-skill, .lang{
     padding: 3rem 0;
-    
+    }
+.about-me__title, .experience-title, .education-title, .tech-skill__title, .soft-skill__title, .lang-title{
+    font-size: 1.5rem;
+    color: var(--primary-clr);
 }
-.about-me__title{
-    font-size: 2.25rem;
-}
-.about-me__subtitle{
+.about-me__subtitle, .experience-subtitle, .education-one, .education-two, .tech-skill__subtitle, .soft-skill__subtitle, .lang-subtitle{
     line-height: 34px;
     font-size: 1.25rem;
     text-align: justify;
 }
+.education-one{
+    margin-bottom: 1em;
+}
+
 @media(min-width:768px){
     .profile-header__content{
         flex-direction: row;
         justify-content: space-around;
     }
+    .main-content{
+        display: flex;
+    }
+    .main-cv1{
+    width: 60%;
+} 
+.main-cv2{
+    width: 33%;
+}
 }
