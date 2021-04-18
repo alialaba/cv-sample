@@ -1,5 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+:root{
+    --primary-clr:#0699A6;
+    --secondary-clr:#9E8C6C;
+    --white-clr:#fff;
+    --dark-clr:#000000;
+}
+.container{
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1200px;
+}
+.profile-header{
+    background: var(--secondary-clr);
+    /* height: 596px; */
+    padding: 4rem;
+    /* opacity: 20%; */
+    /* transform: skewX(-20deg); */
+    
+}
+.profile-header__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.profile-header__img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--primary-clr);
+}
+.profile-header__stack{
+    color: var(--white-clr);
+    letter-spacing: 3px;
+    
+}
+.profile-header__name{
+    font-size: 3.5rem;
+    line-height: 46px;
+    font-weight: 900;
+    letter-spacing: -2.17px;
+    margin-top: .5em;
+}
+.profile-header__content2{
+    padding: 2rem;
+}
+.btn-contact{
+    padding: .7em 2em;
+    background: var(--primary-clr);
+    border:none;
+    font-size: 1.2rem;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+/*About */
+.about-me{
+    padding: 3rem 0;
+    
+}
+.about-me__title{
+    font-size: 2.25rem;
+}
+.about-me__subtitle{
+    line-height: 34px;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+@media(min-width:768px){
+    .profile-header__content{
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
