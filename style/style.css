@@ -61,8 +61,33 @@ hr{
 }
 .profile-header__img span{
     position: absolute;
-    bottom: 40px;
-    text-align: center;
+    bottom: 150px;
+    left: 40px;
+    font-size: 1.2rem;
+    font-style: italic;
+    
+}
+.profile-header__img h3{
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--primary-clr);
+}
+.profile-header__img small{
+     position: absolute;
+    bottom:70px;
+    right: 40px;
+    font-style: italic;
+}
+.profile-header__img h2{
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    color: var(--secondary-clr);
+    font-weight: 900;
+    font-size: 3rem;
 }
 .profile-header__stack{
     color: var(--white-clr);
@@ -71,7 +96,7 @@ hr{
 }
 .profile-header__name{
     font-size: 3.5rem;
-    line-height: 46px;
+    line-height: 55px;
     font-weight: 900;
     letter-spacing: -2.17px;
     margin-top: .5em;
@@ -86,6 +111,11 @@ hr{
     font-size: 1.2rem;
     margin-top: 1em;
     border-radius: 5px;
+    color: var(--white-clr);
+}
+.btn-contact:hover{
+    border: 1px solid var(--white-clr);
+    
 }
 
 /*About */
@@ -109,7 +139,7 @@ hr{
  @media(min-width:768px){
     .profile-header__content{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .main-content{
         display: flex;
