@@ -90,7 +90,6 @@ hr{
 
 /*About */
 
-
 .about-me,.experience, .education,.tech-skill, .soft-skill, .lang{
     padding: 3rem 0;
     }
@@ -107,7 +106,7 @@ hr{
     margin-bottom: 1em;
 }
 
-/* @media(min-width:768px){
+ @media(min-width:768px){
     .profile-header__content{
         flex-direction: row;
         justify-content: space-around;
@@ -121,4 +120,4 @@ hr{
 .main-cv2{
     width: 33%;
 }
-} */
+} 
