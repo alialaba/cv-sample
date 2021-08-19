@@ -105,13 +105,14 @@ hr{
     padding: 2rem;
 }
 .btn-contact{
-    padding: .7em 2em;
+    padding: .5em 2em;
     background: var(--primary-clr);
     border:none;
     font-size: 1.2rem;
     margin-top: 1em;
     border-radius: 5px;
     color: var(--white-clr);
+    outline: none;
 }
 .btn-contact:hover{
     border: 1px solid var(--white-clr);
@@ -120,14 +121,14 @@ hr{
 
 /*About */
 
-.about-me,.experience, .education,.tech-skill, .soft-skill, .lang{
+.about-me,.experience, .education,.tech-skill, .soft-skill, .lang, .sponsor{
     padding: 3rem 0;
     }
-.about-me__title, .experience-title, .education-title, .tech-skill__title, .soft-skill__title, .lang-title{
+.about-me__title, .experience-title, .education-title, .tech-skill__title, .soft-skill__title, .lang-title, .sponsor-title{
     font-size: 1.5rem;
     color: var(--primary-clr);
 }
-.about-me__subtitle, .experience-subtitle, .education-one, .education-two, .tech-skill__subtitle, .soft-skill__subtitle, .lang-subtitle{
+.about-me__subtitle, .experience-subtitle, .education-one, .education-two, .tech-skill__subtitle, .soft-skill__subtitle, .lang-subtitle, .sponsor-subtitle{
     line-height: 34px;
     font-size: 1.25rem;
     text-align: justify;
